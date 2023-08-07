@@ -1,0 +1,17 @@
+@prefix ex: <http://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Donald_Trump ex:address [ ex:city ex:Palm_Beach ;
+            ex:country ex:United_States ;
+            ex:postalCode 33480 ;
+            ex:residence ex:Mar_a_Lago ;
+            ex:state ex:Florida ;
+            ex:streetName "1100 S Ocean Blvd"^^xsd:string ] ;
+    ex:previousAddress [ ex:city ex:Washington_DC ;
+            ex:country ex:United_States ;
+            ex:phoneNumber "1 202 456 1414"^^xsd:integer ;
+            ex:postalCode "20500"^^xsd:integer ;
+            ex:residence ex:The_White_House ;
+            ex:streetName "1600 Pennsylvania Ave."^^xsd:string ];
+    ex:marriedTo ex:Melania_Trump;
+    ex:fatherTo (ex:Ivanka_Trump ex:Donald_Trump_Jr ex: ex:Tiffany_Trump ex:Eric_Trump ex:Barron_Trump).
